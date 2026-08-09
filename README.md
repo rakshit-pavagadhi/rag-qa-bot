@@ -5,7 +5,6 @@ An enterprise-grade, privacy-first Retrieval-Augmented Generation (RAG) system b
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![LangChain](https://img.shields.io/badge/LangChain-0.3%2B-1C3C3C)
 ![Gradio](https://img.shields.io/badge/Gradio-5%2B-orange)
-![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
@@ -25,7 +24,7 @@ An enterprise-grade, privacy-first Retrieval-Augmented Generation (RAG) system b
 ```text
 [ Document Ingestion ] → [ Chunking (Recursive) ] → [ HuggingFace Embeddings ] → [ FAISS Index ]
                                                                                         │
-[ User Query ] → [ History-Aware Reformulator ] → [ Vector Retrieval (k=9) ] ──────────┤
+[ User Query ] → [ History-Aware Reformulator ] → [ Vector Retrieval (k=9) ]  ──────────┤
                                                                                         ▼
 [ Gradio UI ] ← [ Ollama Llama 3.2 ] ← [ Context-Grounded Prompt ] ←────────────────────┘
 ```
@@ -146,13 +145,3 @@ Navigate to [http://127.0.0.1:7860](http://127.0.0.1:7860) in your browser.
 - [ ] Docker Compose setup for one-command deployment
 
 ---
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 🙌 Acknowledgements
-
-Built with [LangChain](https://github.com/langchain-ai/langchain), [Ollama](https://ollama.com), [FAISS](https://github.com/facebookresearch/faiss), and [Gradio](https://github.com/gradio-app/gradio).
